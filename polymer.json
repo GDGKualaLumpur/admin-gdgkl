@@ -1,0 +1,43 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/gdg-auth.html",
+  "fragments": [
+    "src/gdg-app.html",
+    "src/gdg-events-details.html",
+    "src/gdg-events-editor.html",
+    "src/gdg-events-home.html",
+    "src/gdg-events.html"
+  ],
+  "sources": [
+    "src/**/*",
+    "images/**/*"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "bower_components/webcomponentsjs/*.js"
+  ],
+  "lint": {
+    "rules": [
+      "polymer-2"
+    ]
+  },
+  "builds": [
+    {
+      "name": "firebase",
+      "bundle": false,
+      "js": {
+        "minify": false,
+        "compile": false
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      },
+      "addPushManifest": true,
+      "insertPrefetchLinks": true,
+      "addServiceWorker": true
+    }
+  ]
+}

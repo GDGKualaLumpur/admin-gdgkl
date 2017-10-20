@@ -1,0 +1,93 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<!-- shared styles for all views -->
+<dom-module id="shared-styles">
+  <template>
+    <style>
+      .container {
+        max-width: 1200px;
+        padding: 32px 24px;
+        margin: 0 auto;
+      }
+
+      .container .row {
+        display: flex;
+        width: 100%;
+      }
+
+      .fab {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 36px;
+        right: 24px;
+        background-color: #db4437;
+        cursor: pointer;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 50ms all linear;
+      }
+
+      .fab:hover {
+        background-color: #e06356;
+        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+      }
+
+      .chip#meetup {
+        border-color: #ed3941;
+        background: #ed3941;
+        color: white;
+      }
+
+      .chip#conference {
+        border-color: #528ef4;
+        background: #528ef4;
+        color: white;
+      }
+
+      .chip#live_viewing_party {
+        border-color: #f8c346;
+        background: #f8c346;
+        color: #000;
+      }
+
+      .chip#bootcamp {
+        border-color: #FF5722;
+        background: #FF5722;
+        color: #fff;
+      }
+
+      .chip#workshop {
+        background: #469b5b;
+        border-color: #469b5b;
+        color: white;
+      }
+
+      .chip#study_jam {
+        background: #9C27B0;
+        border-color: #9C27B0;
+        color: white;
+      }
+
+      @media screen and (max-width: 960px) {
+        .container {
+          padding: 0;
+        }
+      }
+    </style>
+  </template>
+</dom-module>
