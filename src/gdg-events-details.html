@@ -270,7 +270,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                                 </div> -->
                                 </div>
                                 <a href$="../events/edit/[[data.id]]" class="button">Edit Event</a>
-                                <a target="_blank" href$="[[data.url]]" class="button url">Visit Website</a>
+                                <template is="dom-if" if="[[data.url]]">
+                                    <a target="_blank" href$="[[data.url]]" class="button url">Visit Website</a>
+                                </template>
                             </template>
                         </div>
                     </div>
